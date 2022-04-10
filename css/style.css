@@ -21,6 +21,9 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-wrap: break-word;
     text-rendering: optimizeSpeed;
+    background-color: black;
+    color: white;
+    font-family: serif;
 }
 
 /* We reset the margins */
@@ -48,12 +51,187 @@ ol {
   padding: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-container {
-    background-color: black;
-    min-height: 100px;
+    height: 108px;
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 15.5px;
+    font-family: sans-serif;
+}
+
+.bottom-menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+.brand-logo {
+    width: 240px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    padding-bottom: 2px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-top: 7px;
+}
+
+.box-container {
+    display: flex;
+    gap: 10px;
+}
+
+a:hover {
+    color: #00adef;
+}
+
+.brand {
+    padding-bottom: 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.brand-header {
+    position: relative;
+    text-align: center;
+    margin: 0 90px 0 90px;
+}
+
+.brand-header h1 {
+    position: absolute;
+    top: 60px;
+    left: 210px;
+    bottom: 100px;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-size: 2.9rem;
+    font-weight: lighter;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.search-box {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    width: 1670px;
+    padding: 30px;
+    margin: 0 90px;
+}
+
+form {
+    width: 70%;
+    display: flex;
+}
+
+.form {
+    background-color: #ececec;
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.brand-header button {
+        position: absolute;
+        padding: 0px;
+        background-color: rgb(44, 44, 44);
+        color: rgb(219, 219, 219);
+        border-radius: 1px;
+        bottom: 520px;
+        left: 210px;
+        width: 140px;
+        height: 33px;
+        border: none;
+}
+
+.button {
+    border: none;
+}
+
+
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 11px;
+    height: 11px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: -4px;
+}
+
+.gg-search::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 5px;
+    width: 4px;
+    height: 10px;
+    background: currentColor;
+    transform: rotate(-25deg);
+    top: 7px;
+    left: 6px
+}
+
+.gg-info {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 40px
+}
+.gg-info::after,
+.gg-info::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    background: currentColor;
+    left: 7px
+}
+.gg-info::after {
+    bottom: 2px;
+    height: 8px
+}
+.gg-info::before {
+    height: 2px;
+    top: 2px
 }
