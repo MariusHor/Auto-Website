@@ -1,0 +1,16 @@
+{
+	"name": "",
+	"icons": [
+		{
+			"src": "https:\/\/assets.oneweb.mercedes-benz.com\/global\/1.9.0\/favicon\/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "https:\/\/assets.oneweb.mercedes-benz.com\/global\/1.9.0\/favicon\/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	],
+	"display": "standalone"
+}
