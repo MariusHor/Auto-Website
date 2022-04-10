@@ -1,0 +1,49 @@
+/*=============== BASE ===============*/
+
+
+/* The first rule resets the box-sizing of the html to border-box, 
+    while the second one allows you to use the box-sizing property with a different value inside of your css
+    without worrying that the universal selector will override it, giving you more flexibility */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* First we specify the line-height for the html and then we set the min-height to 100vh in order for it to fill the viewport.
+    The next declaration is used for font smoothing on MacOS browsers.
+    The next declaration is used so that text won`t automatically line-wrap when there isn't enough space to fit all of the characters on a single line. */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+    text-rendering: optimizeSpeed;
+}
+
+/* We reset the margins */
+blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+ /* The first declaration turns these elements from inline elements to block elements while the second declaration
+    prevents them to overflow their parent container*/ 
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* By default, buttons and inputs don't inherit typographical styles from their parents therefore we use this rule to force them to do so */
+input, button, textarea, select {
+    font: inherit;
+}
+
+ /* Remove list styles on ul, ol elements and reset margin and padding */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
