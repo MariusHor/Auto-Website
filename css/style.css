@@ -51,6 +51,8 @@ ol {
   padding: 0;
 }
 
+/*-----HEADER-----*/
+
 header {
     display: flex;
     flex-direction: column;
@@ -58,18 +60,40 @@ header {
     align-items: center;
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+/*-----Header Children-----*/
 
-.nav-bar {
-    max-width: 77rem;
-    width: 100%;
+nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    max-width: 77rem;
+    width: 100%;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 105rem;
+    width: 100%;
+}
+
+.search-box-container {
+    background-color: rgb(19, 19, 19);
+    max-width: 77rem;
+    width: 100%;
+    padding: 25px 0;
+}
+
+/*-----Nav Children-----*/
+
+.brand-logo {
+    width: 240px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .nav-menu {
@@ -81,54 +105,7 @@ header {
     font-family: sans-serif;
 }
 
-.bottom-menu {
-    display: flex;
-    gap: 40px;
-
-}
-
-.brand-logo {
-    width: 240px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.logo {
-    padding-bottom: 2px;
-}
-
-.top-menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-    padding-top: 7px;
-}
-
-.box-container {
-    display: flex;
-    gap: 10px;
-}
-
-a:hover {
-    color: #00adef;
-}
-
-.brand {
-    padding-bottom: 6px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 105rem;
-    width: 100%;
-    align-items: center;
-}
+/*-----Hero-container Children-----*/
 
 .image {
     width: 100%;
@@ -144,6 +121,47 @@ a:hover {
     max-width: 77rem;
     width: 100%;
     padding: 10px;
+}
+
+/*-----Search-box-container Children-----*/
+
+form {
+    display: flex;
+}
+
+/*-----Brand-logo Children-----*/
+
+.brand {
+    padding-bottom: 6px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    padding-bottom: 2px;
+}
+/*-----Nav-menu Children-----*/
+
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding-top: 7px;
+}
+
+.bottom-menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+.box-container {
+    display: flex;
+    gap: 10px;
+}
+
+a:hover {
+    color: #00adef;
 }
 
 .op-bg {
@@ -176,21 +194,6 @@ h1, h2, h3, h4 {
     margin-left: 10px;
 }
 
-.search-box {
-    background-color: rgb(19, 19, 19);
-    display: flex;
-    justify-content: center;
-    max-width: 105rem;
-    width: 100%;
-    padding: 25px 0;
-}
-
-form {
-    max-width: 77rem;
-    width: 100%;
-    display: flex;
-}
-
 .form {
     background-color: #ececec;
     width: 100%;
@@ -200,13 +203,13 @@ form {
     font-size: 18px;
 }
 
-.hero button {
+.hero-container button {
     background-color: rgb(44, 44, 44);
     color: rgb(219, 219, 219);
     cursor: pointer;
     border: none;
     border-radius: 0.125em;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 0.4em 1em;
 }
 
