@@ -23,7 +23,7 @@ body {
     text-rendering: optimizeSpeed;
     background-color: black;
     color: white;
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 /* We reset the margins */
@@ -146,15 +146,34 @@ a:hover {
     padding: 10px;
 }
 
+.op-bg {
+    display: inline-block;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1px;
+}
+
+
 a {
     color: white;
     text-decoration: none;
 }
 
-h1, h2, h3 {
-    font-size: 44px;
-    font-weight: lighter;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+h1, h2, h3, h4 {
+    font-family: Inter,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 200;
+}
+
+.op-bg h1 {
+    font-size: 40px;
+}
+
+.op-bg h4 {
+    margin-bottom: 25px;
+}
+
+.btn-gap {
+    margin-left: 10px;
 }
 
 .search-box {
@@ -184,14 +203,19 @@ form {
 .hero button {
     background-color: rgb(44, 44, 44);
     color: rgb(219, 219, 219);
-    border-radius: 1px;
-    width: 140px;
-    height: 33px;
+    cursor: pointer;
     border: none;
+    border-radius: 0.125em;
+    font-size: 0.95rem;
+    padding: 0.4em 1em;
 }
 
 .button {
     border: none;
+}
+
+button:hover {
+    background-color: #028bc2;
 }
 
 
